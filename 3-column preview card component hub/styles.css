@@ -80,7 +80,7 @@ main {
 
 
 /*Desktop*/
-@media screen and (min-width: 370px) {
+@media screen and (min-width: 470px) {
     main {
         position: absolute;
         top: 50%;
@@ -116,7 +116,7 @@ main {
 }
 
 /*Mobile Device*/
-@media  screen and (max-width: 370px) {
+@media  screen and (max-width: 470px) {
     .all-sections {
         padding: 5px 7px;
         display: block;
