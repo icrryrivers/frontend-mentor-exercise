@@ -1,0 +1,188 @@
+:root {
+    /*score colors page 2*/
+    --light-red: hsl(0, 100%, 67%);
+    --orangey-yellow: hsl(39, 100%, 56%);
+    --green-teal: hsl(166, 100%, 37%);
+    --cobalt-blue: hsl(234, 85%, 45%);
+    /*score background colors*/
+    --background-red: rgba(255, 87, 87, 0.053);
+    --background-yellow: hsla(39, 100%, 56%, 0.053);
+    --background-green: hsla(166, 100%, 37%, 0.053);
+    --background-blue: rgba(17, 36, 212, 0.053);
+    /*background page 1*/
+    --light-slate-blue: hsl(252, 100%, 67%);
+    --light-royal-blue: hsl(241, 81%, 54%);
+    /*circle*/
+    --violet-blue: hsla(256, 72%, 46%, 1);
+    --persian-blue: hsla(241, 72%, 46%, 0);
+    /*h1 and p*/
+    --white: hsl(0, 0%, 100%);
+    --white-gray: rgb(204, 203, 203);
+    /*button*/
+    --dark-gray-blue: hsl(224, 30%, 27%);
+}
+
+* {
+    box-sizing: border-box;
+    justify-content: center;
+    align-items: center;
+    font-family: 'Hanken Grotesk';
+}
+
+body {
+    margin-top: 10vh;
+    margin-bottom: 10vh;
+}
+
+h1, label {
+    text-transform: capitalize;
+}
+
+/*First Page*/
+.page1 {
+    border-radius: 20px;
+    background: linear-gradient(180deg, var(--light-slate-blue), var(--light-royal-blue));
+    text-align: center;
+    width: 300px;
+    min-width: 300px;
+    height: 400px;
+}
+ header {
+    color: var(--white-gray);
+    padding: 5px;
+    font-size: 14px;
+    font-weight: lighter;
+ }
+
+ .circle {
+    border-radius: 100px;
+    width: 150px;
+    height: 150px;
+    background: linear-gradient(180deg, var(--violet-blue), var(--persian-blue));
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: -50px;
+}
+
+.circle .yourCirclePoints {
+    color: var(--white);
+    font-size: 50px;
+    font-weight: bolder;
+    padding-top: 40px ;
+ }
+
+ .circle .maxCirclePoints {
+    color: var(--white-gray);
+    margin-top: -50px;
+ }
+
+ .grade {
+    color: var(--white);
+    font-weight: lighter;
+ }
+
+ .descriptionGrade {
+    color: var(--white-gray);
+    padding: 0 12%;
+ }
+
+/*Second Page*/
+.page2 {
+    width: 300px;
+    height: 400px;
+    background-color: var(--white);
+}
+
+.page2 h1 {
+    margin-left: 20px;
+}
+
+.summaryOfAll {
+    width: 260px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.yourPoints {
+    font-weight: bolder;
+    margin-right: 8px;
+}
+
+.maxPoints {
+    color: gray;
+    font-weight: bolder;
+}
+
+.reaction-label, .memory-label, .verbal-label, .visual-label {
+    margin-right: 40%;
+
+}
+.reaction, .memory, .verbal, .visual {
+    display: flex;
+    margin-bottom: 10px;
+    border-radius:  10px;
+    height: 50px;
+}
+
+button {
+    background-color: var(--dark-gray-blue);
+    border: none;
+    border-radius: 30px;
+    width: 200px;
+    height: 40px;
+    color: var(--white);
+    margin: 10px 15%;
+    cursor: pointer;
+}
+button:active {
+    transform: translateY(2px);
+  }
+
+
+.reaction-label{
+    color: var(--light-red)
+}
+.reaction {
+    background-color: var(--background-red);
+}
+
+
+.memory-label {
+    color: var(--orangey-yellow);
+}
+.memory {
+    background-color: var(--background-yellow);
+}
+
+
+.verbal-label {
+    color: var(--green-teal);
+}
+.verbal {
+    background-color: var(--background-green);
+}
+
+
+.visual-label {
+    color: var(--cobalt-blue);
+}
+.visual {
+    background-color: var(--background-blue);
+}
+
+main {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+footer {
+    text-align: center;
+}
+a:hover {
+    color: purple;
+}
+a {
+    color: rgb(88, 87, 87);
+    font-weight: bold;
+}
+
